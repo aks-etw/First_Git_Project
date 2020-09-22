@@ -3,11 +3,18 @@
 <head>
 <title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javaScript.js"></script>
+	<script type="text/javascript">
+		function showtext(){
+		Document.getElementById("show").style.display : none;
+		Document.getElementById("text").innerHTML = "Welcome to here";
+}
+	</script>
 </head>
 <body>
-
-<h4>My name :</h3><h2 class="name">Abhishek Kumar</h2>
-<h4>Address :</h3><h3 class="address">Vill - Kachhapura, Post - Sarsai Nawar, Distt - Etawah UP 206123</h3>
+<button onclick="showtext();" id="show">Click here</button><span id="text"></span>
+<h4>My name :</h3><h2 id="name" >Abhishek Kumar</h2>
+<h4>Address :</h3><h3 id="address">Vill - Kachhapura, Post - Sarsai Nawar, Distt - Etawah UP 206123</h3>
 <h4>Highest Qualification :</h4><h3>MCA from MNNIT Allahabad</h3>
 
 </body>
